@@ -2,7 +2,7 @@
 
 | | |
 |-|-|
-|`Author` | Your full name
+|`Author` | AXENIE George‐Cătălin
 
 ## Description
 
