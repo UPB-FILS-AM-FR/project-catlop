@@ -1,62 +1,61 @@
-# Your Project Name
+# Dispositif multifonctionnel de code Morse
 
 | | |
 |-|-|
-|`Author` | AXENIE George‐Cătălin
+|`Auteur` | AXENIE George‐Cătălin
 
 ## Description
 
+Ce projet propose un dispositif dédié à la pratique du code Morse, qui comprend trois fonctionnalités principales : **production**, **décodage** et **entraînement**.
+
+La partie **production** permet à l’utilisateur d’accéder à un menu où il peut régler la vitesse de transmission et introduire un texte. Le dispositif convertit alors ce texte en code Morse et le lit à la vitesse choisie.
+
+La partie **décodage** propose un mode interactif où l’utilisateur peut transmettre du code Morse de deux manières : soit à l’aide d’une **pioche** simple, auquel cas le progamme s’adapte dynamiquement à la vitesse de l’utilisateur, soit via un **manipulateur iambique**, fonctionnant avec une vitesse de transmission prédéfinie. Le dispositif décode en temps réel le code Morse saisi et affiche le texte correspondant à l’écran.
+
+La partie **entraînement** consiste à afficher une liste de mots générés aléatoirement que l’utilisateur doit transmettre en utilisant l’une des méthodes de saisie disponibles. À la fin de l’exercice, le dispositif calcule et affiche la vitesse moyenne de transmission.
+
+La saisie du texte et l’intéraction avec le programme s’effectuent au moyen d’un **clavier intégré**.
+
 ## Motivation
+
+Bien que son utilisation dans les télécommunications ait reculé, le code Morse conserve une communauté active d’amateurs et de passionnés. Ce dispositif est conçu pour les aider à s’entraîner et à perfectionner leur maîtrise du code Morse.
 
 ## Architecture
 
-### Block diagram
+### Schéma fonctionnel
 
-<!-- Make sure the path to the picture is correct -->
 ![Block Diagram](schematics/block_diagram.png)
 
-### Schematic
+### Schéma
 
 ![Schematic](schematics/kicad_schematic.png)
 
-### Components
+### Composants
 
 
-<!-- This is just an example, fill in with your actual components -->
-
-| Device | Usage | Price |
-|--------|--------|-------|
-| Activ Buzzer | Buzzer | [1.5 RON](https://www.optimusdigital.ro/ro/audio-buzzere/635-buzzer-activ-de-3-v.html?search_query=buzzer&results=61) |
-| Push Button | Button | [1 RON](https://www.optimusdigital.ro/ro/butoane-i-comutatoare/1119-buton-6x6x6.html?search_query=buton&results=222) |
-| Jumper Wires | Connecting components | [7 RON](https://www.optimusdigital.ro/ro/fire-fire-mufate/884-set-fire-tata-tata-40p-10-cm.html?search_query=set+fire&results=110) |
-| Breadboard | Project board | [10 RON](https://www.optimusdigital.ro/ro/prototipare-breadboard-uri/8-breadboard-830-points.html?search_query=breadboard&results=145) |
-
-### Libraries
-
-<!-- This is just an example, fill in the table with your actual components -->
-
-| Library | Description | Usage |
-|---------|-------------|-------|
-| [lib-name1](link-to-lib) | official description of the lib | Used for accesing the peripherals of the microcontroller  |
-| [lib-name2](link-to-lib) | official description of the lib | Used for accesing the peripherals of the microcontroller  |
-
-## Log
-
-<!-- write every week your progress here -->
-
-### Week 6 - 12 May
-
-### Week 7 - 19 May
-
-### Week 20 - 26 May
+| Appareil | Utilisation | Prix |
+|----------|-------------|------|
+| Arduino Nano | Carte à microcontrôleur | [24,99 RON](https://www.optimusdigital.ro/ro/compatibile-cu-arduino-nano/1686-placa-de-dezvoltare-compatibila-cu-arduino-nano-atmega328p-i-ch340.html)
+| 3 micro‐interrupteurs | Pioche (1) et manipulateur iambique (2) | [3 × 3,27 RON](https://ardushop.ro/ro/electronica/1787-microswitch-6427854027078.html)
+| Kit platine de prototypage + fils + module d’alimentation | Prototypage | [34,58 RON](https://www.emag.ro/kit-breadboard-830-gauri-65-fire-modul-tensiune-alimentare-mb102-jh027/pd/DY1YP6BBM/)
+| 3 modules de clavier matriciel 4×4 | Saisie texte | [3 × 4,97 RON](https://ardushop.ro/ro/butoane--switch-uri/295-modul-tastatura-matriciala-4x4-6427854003126.html)
+| 2 modules d’extension E/S I²C PCF8574 | Extension E/S pour clavier | [2 × 9,96 RON](https://ardushop.ro/ro/comunicatie/2019-modul-de-expansiune-io-i2c-pcf8574-6427854030788.html)
+| Écran OLED 0,96 pouces I²C 128×64 px | Écran | [21,78 RON](https://ardushop.ro/ro/display-uri-si-led-uri/818-display-oled-096-i2c-iic-albastru-6427854010636.html)
+| Buzzer passif | Son | [4,03 RON](https://ardushop.ro/ro/difuzoare-si-buzzere/1724-1283-buzzer.html#/333-tip-pasiv)
 
 
-## Reference links
+### Bibliothèques
 
-<!-- Fill in with appropriate links and link titles -->
+| Bibliothèque | Description | Utilisation |
+|--------------|-------------|-------------|
 
-[Tutorial 1](https://www.youtube.com/watch?v=wdgULBpRoXk&t=1s&ab_channel=BenEater)
+## Journal
 
-[Article 1](https://www.explainthatstuff.com/induction-motors.html)
+### Semaine 4 – 10 mai
 
-[Link title](https://projecthub.arduino.cc/)
+### Semaine 11 – 17 mai
+
+### Semaine 18 – 24 mai
+
+
+## Liens de référence
